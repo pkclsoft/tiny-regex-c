@@ -1,4 +1,7 @@
 *.swp
 *.pyc
+*.sym
+*.a
+*.root
 /tests/*
 !/tests/*.c

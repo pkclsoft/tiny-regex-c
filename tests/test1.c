@@ -104,6 +104,7 @@ int main()
     size_t ntests = sizeof(test_vector) / sizeof(*test_vector);
     size_t nfailed = 0;
     size_t i;
+    int m = 0;
 
     for (i = 0; i < ntests; ++i)
     {
@@ -112,7 +113,7 @@ int main()
         should_fail = (test_vector[i][0] == NOK);
         correctlen = (int)(test_vector[i][3]);
 
-        int m = re_match(pattern, text, &length);
+        m = re_match(pattern, text, &length);
 
         if (should_fail)
         {

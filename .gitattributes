@@ -1,0 +1,4 @@
+*.c filter=crtext
+*.h filter=crtext
+*.md filter=crtext
+tests/*.c filter=crtext
